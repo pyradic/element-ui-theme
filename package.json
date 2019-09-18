@@ -1,35 +1,17 @@
 {
-  "name": "element-theme-chalk",
-  "version": "2.12.0",
-  "description": "Element component chalk theme.",
-  "main": "lib/index.css",
-  "style": "lib/index.css",
-  "files": [
-    "lib",
-    "src"
-  ],
-  "scripts": {
-    "build": "gulp build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ElementUI/theme-chalk.git"
-  },
-  "keywords": [
-    "element",
-    "theme"
-  ],
-  "author": "yi.shyang@ele.me",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ElementUI/theme-chalk/issues"
-  },
-  "homepage": "https://github.com/ElementUI/theme-chalk#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-sass": "^3.1.0",
-    "gulp-autoprefixer": "^4.0.0"
-  },
-  "dependencies": {}
+    "name": "@crvs/element-ui-theme",
+    "version": "1.0.0",
+    "main": "gulpfile.js",
+    "private": true,
+    "scripts": {
+        "gulp": "gulp",
+        "build": "gulp build"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-cssmin": "^0.1.7",
+        "gulp-sass": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.0",
+        "rimraf": "^2.6.3"
+    }
 }
