@@ -1,5 +1,5 @@
 {
-    "name": "@crvs/element-ui-theme",
+    "name": "@pyro/element-ui-theme",
     "version": "1.0.0",
     "main": "gulpfile.js",
     "private": true,
