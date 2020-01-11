@@ -348,7 +348,7 @@ $--alert-icon-large-size: 28px !default;
 /// color||Color|0
 $--messagebox-title-color: $--color-text-primary !default;
 $--msgbox-width: 420px !default;
-$--msgbox-border-radius: 4px !default;
+$--msgbox-border-radius: 0;
 /// fontSize||Font|1
 $--messagebox-font-size: $--font-size-large !default;
 /// fontSize||Font|1
@@ -394,7 +394,7 @@ $--message-danger-font-color: $--color-danger !default;
 $--notification-width: 330px !default;
 /// padding||Spacing|3
 $--notification-padding: 14px 26px 14px 13px !default;
-$--notification-radius: 8px !default;
+$--notification-radius: 0;
 $--notification-shadow: $--box-shadow-light !default;
 /// color||Color|0
 $--notification-border-color: $--border-color-lighter !default;
@@ -604,7 +604,7 @@ $--switch-on-color: $--color-primary !default;
 $--switch-off-color: $--border-color-base !default;
 /// fontSize||Font|1
 $--switch-font-size: $--font-size-base !default;
-$--switch-core-border-radius: 10px !default;
+$--switch-core-border-radius: 0;
 // height||Other|4 TODO: width 代码写死的40px 所以下面这三个属性都没意义
 $--switch-width: 40px !default;
 // height||Other|4
@@ -649,7 +649,7 @@ $--pagination-font-size: 13px !default;
 $--pagination-background-color: $--color-white !default;
 /// color||Color|0
 $--pagination-font-color: $--color-text-primary !default;
-$--pagination-border-radius: 3px !default;
+$--pagination-border-radius: 0;
 /// color||Color|0
 $--pagination-button-color: $--color-text-primary !default;
 /// height||Other|4
@@ -715,7 +715,7 @@ $--tag-warning-color: $--color-warning !default;
 $--tag-danger-color: $--color-danger !default;
 /// fontSize||Font|1
 $--tag-font-size: 12px !default;
-$--tag-border-radius: 4px !default;
+$--tag-border-radius: 0;
 $--tag-padding: 0 10px !default;
 
 /* Tree
@@ -737,7 +737,7 @@ $--dropdown-menuItem-hover-color: $--link-color !default;
 -------------------------- */
 /// color||Color|0
 $--badge-background-color: $--color-danger !default;
-$--badge-radius: 10px !default;
+$--badge-radius: 0;
 /// fontSize||Font|1
 $--badge-font-size: 12px !default;
 /// padding||Spacing|3
@@ -749,7 +749,7 @@ $--badge-size: 18px !default;
 --------------------------*/
 /// color||Color|0
 $--card-border-color: $--border-color-lighter !default;
-$--card-border-radius: 4px !default;
+$--card-border-radius: 0;
 /// padding||Spacing|3
 $--card-padding: 20px !default;
 
@@ -763,7 +763,7 @@ $--slider-button-hover-color: mix($--color-primary, black, 97%) !default;
 $--slider-stop-background-color: $--color-white !default;
 $--slider-disable-color: $--color-text-placeholder !default;
 $--slider-margin: 16px 0 !default;
-$--slider-border-radius: 3px !default;
+$--slider-border-radius: 0;
 /// height|1|Other|4
 $--slider-height: 6px !default;
 /// height||Other|4
@@ -774,7 +774,7 @@ $--slider-button-wrapper-offset: -15px !default;
 /* Steps
 --------------------------*/
 $--steps-border-color: $--disabled-border-base !default;
-$--steps-border-radius: 4px !default;
+$--steps-border-radius: 0;
 $--steps-padding: 20px !default;
 
 /* Menu
