@@ -25,7 +25,7 @@
       color: $--color-text-regular;
 
       &.is-link, & a {
-        font-weight: bold;
+        font-weight: 500;
         text-decoration: none;
         transition: $--color-transition-base;
         color: $--color-text-primary;
