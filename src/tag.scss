@@ -97,7 +97,7 @@
   height: 32px;
   padding: $--tag-padding;
   line-height: 30px;
-  font-size: $--tag-font-size;
+  font-size: var(--tag-font-size);
   color: $--tag-primary-color;
   border-width: 1px;
   border-style: solid;

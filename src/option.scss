@@ -3,7 +3,7 @@
 
 @include b(select-dropdown) {
   @include e(item) {
-    font-size: $--select-font-size;
+    font-size: var(--select-font-size);
     padding: 0 20px;
     position: relative;
     white-space: nowrap;

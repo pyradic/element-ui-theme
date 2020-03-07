@@ -12,7 +12,7 @@
   display: inline-block;
   white-space: nowrap;
   outline: none;
-  font-size: $--font-size-base;
+  font-size: var(--font-size-base);
   margin-right: 30px;
   @include utils-user-select(none);
 
@@ -193,7 +193,7 @@
   }
 
   @include e(label) {
-    font-size: $--radio-font-size;
+    font-size: var(--radio-font-size);
     padding-left: 10px;
   }
 }

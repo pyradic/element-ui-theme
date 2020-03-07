@@ -43,7 +43,7 @@
   }
 
   @include e(text) {
-    font-size: $--rate-font-size;
+    font-size: var(--rate-font-size);
     vertical-align: middle;
   }
 }

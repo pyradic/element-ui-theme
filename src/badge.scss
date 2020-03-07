@@ -11,7 +11,7 @@
     border-radius: $--badge-radius;
     color: $--color-white;
     display: inline-block;
-    font-size: $--badge-font-size;
+    font-size: var(--badge-font-size);
     height: $--badge-size;
     line-height: $--badge-size;
     padding: 0 $--badge-padding;

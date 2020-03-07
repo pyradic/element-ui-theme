@@ -35,7 +35,7 @@
     line-height: 34px;
     cursor: pointer;
     color: $--color-text-regular;
-    font-size: $--font-size-base;
+    font-size: var(--font-size-base);
     list-style: none;
     white-space: nowrap;
     overflow: hidden;

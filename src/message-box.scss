@@ -12,7 +12,7 @@
   background-color: $--color-white;
   border-radius: $--msgbox-border-radius;
   border: 1px solid $--border-color-lighter;
-  font-size: $--messagebox-font-size;
+  font-size: var(--messagebox-font-size);
   box-shadow: $--box-shadow-light;
   text-align: left;
   overflow: hidden;
@@ -44,7 +44,7 @@
   @include e(title) {
     padding-left: 0;
     margin-bottom: 0;
-    font-size: $--messagebox-font-size;
+    font-size: var(--messagebox-font-size);
     line-height: 1;
     color: $--messagebox-title-color;
   }

@@ -5,7 +5,7 @@
   display: inline-flex;
   align-items: center;
   position: relative;
-  font-size: $--switch-font-size;
+  font-size: var(--switch-font-size);
   line-height: $--switch-height;
   height: $--switch-height;
   vertical-align: middle;
@@ -20,7 +20,7 @@
     transition: .2s;
     height: $--switch-height;
     display: inline-block;
-    font-size: $--switch-font-size;
+    font-size: var(--switch-font-size);
     font-weight: 500;
     cursor: pointer;
     vertical-align: middle;
@@ -38,7 +38,7 @@
     }
     & * {
       line-height: 1;
-      font-size: $--switch-font-size;
+      font-size: var(--switch-font-size);
       display: inline-block;
     }
   }

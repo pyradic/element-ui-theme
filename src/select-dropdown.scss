@@ -44,7 +44,7 @@
   margin: 0;
   text-align: center;
   color: $--select-dropdown-empty-color;
-  font-size: $--select-font-size;
+  font-size: var(--select-font-size);
 }
 
 @include b(select-dropdown__wrap) {
