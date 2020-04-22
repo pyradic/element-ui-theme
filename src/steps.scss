@@ -1,4 +1,5 @@
 @import "mixins/mixins";
+@import "common/var";
 
 @include b(steps) {
   display: flex;
