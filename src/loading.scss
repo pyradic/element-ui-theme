@@ -45,6 +45,7 @@
 
   .el-loading-text {
     color: $--color-primary;
+    color: var(--color-primary);
     margin: 3px 0;
     font-size: 14px;
   }
@@ -61,11 +62,13 @@
     stroke-dashoffset: 0;
     stroke-width: 2;
     stroke: $--color-primary;
+    stroke: var(--color-primary);
     stroke-linecap: round;
   }
 
   i {
     color: $--color-primary;
+    color: var(--color-primary);
   }
 }
 

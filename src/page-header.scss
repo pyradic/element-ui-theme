@@ -37,5 +37,6 @@
   @include e(content) {
     font-size: 18px;
     color: $--color-text-primary;
+    color: var(--color-text-primary);
   }
 }

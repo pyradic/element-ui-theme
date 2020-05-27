@@ -123,6 +123,7 @@
     height: $--slider-button-size;
     border: solid 2px $--slider-main-background-color;
     background-color: $--color-white;
+    background-color: var(--color-white);
     border-radius: 50%;
     transition: .2s;
     user-select: none;
@@ -163,6 +164,7 @@
       transform: translateX(-50%);
       font-size: 14px;
       color: $--color-info;
+      color: var(--color-info);
       margin-top: 15px;
     }
   }

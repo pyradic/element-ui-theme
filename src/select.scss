@@ -51,6 +51,7 @@
         border-radius: $--border-radius-circle;
         color: $--select-input-color;
         transition: $--color-transition-base;
+        transition: var(--color-transition-base);
 
         &:hover {
           color: $--select-close-hover-color;
@@ -131,12 +132,15 @@
 
     &__close.el-icon-close {
       background-color: $--color-text-placeholder;
+      background-color: var(--color-text-placeholder);
       right: -7px;
       top: 0;
       color: $--color-white;
+      color: var(--color-white);
 
       &:hover {
         background-color: $--color-text-secondary;
+        background-color: var(--color-text-secondary);
       }
 
       &::before {

@@ -7,6 +7,7 @@
   position: relative;
   cursor: default;
   background: $--color-white;
+  background: var(--color-white);
   color: $--tree-font-color;
 
   @include e(empty-block) {
@@ -23,6 +24,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     color: $--color-text-secondary;
+    color: var(--color-text-secondary);
   }
 
   @include e(drop-indicator) {
@@ -31,6 +33,7 @@
     right: 0;
     height: 1px;
     background-color: $--color-primary;
+    background-color: var(--color-primary);
   }
 }
 
@@ -46,6 +49,7 @@
   @include when(drop-inner) {
     > .el-tree-node__content .el-tree-node__label {
       background-color: $--color-primary;
+      background-color: var(--color-primary);
       color: #fff;
     }
   }

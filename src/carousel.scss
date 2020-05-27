@@ -29,6 +29,7 @@
     border-radius: 50%;
     background-color: $--carousel-arrow-background;
     color: $--color-white;
+    color: var(--color-white);
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -139,6 +140,7 @@
     width: $--carousel-indicator-width;
     height: $--carousel-indicator-height;
     background-color: $--color-white;
+    background-color: var(--color-white);
     border: none;
     outline: none;
     padding: 0;

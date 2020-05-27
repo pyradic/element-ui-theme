@@ -12,6 +12,7 @@
     width            : 100%;
     max-width        : 100%;
     background-color : $--color-white;
+    background-color : var(--color-white);
     font-size        : 14px;
     color            : $--table-font-color;
 
@@ -31,6 +32,7 @@
         line-height : 60px;
         width       : 50%;
         color       : $--color-text-secondary;
+        color       : var(--color-text-secondary);
     }
 
     // 展开行
@@ -64,6 +66,7 @@
 
     @include e(expanded-cell) {
         background-color : $--color-white;
+        background-color : var(--color-white);
 
         // 纯属为了增加权重
         &[class*=cell] {
@@ -170,6 +173,7 @@
 
     tr {
         background-color : $--color-white;
+        background-color : var(--color-white);
 
         input[type="checkbox"] {
             margin : 0;
@@ -212,6 +216,7 @@
 
             &.highlight {
                 color : $--color-primary;
+                color : var(--color-primary);
             }
         }
 
@@ -339,6 +344,7 @@
         top              : -1px;
         right            : 0;
         background-color : $--color-white;
+        background-color : var(--color-white);
         border-bottom    : $--table-border;
     }
 
@@ -467,21 +473,25 @@
 
         &.ascending {
             border-bottom-color : $--color-text-placeholder;
+            border-bottom-color : var(--color-text-placeholder);
             top                 : 5px;
         }
 
         &.descending {
             border-top-color : $--color-text-placeholder;
+            border-top-color : var(--color-text-placeholder);
             bottom           : 7px;
         }
     }
 
     .ascending .sort-caret.ascending {
         border-bottom-color : $--color-primary;
+        border-bottom-color : var(--color-primary);
     }
 
     .descending .sort-caret.descending {
         border-top-color : $--color-primary;
+        border-top-color : var(--color-primary);
     }
 
     .hidden-columns {
@@ -537,6 +547,7 @@
 
         & i {
             color     : $--color-info;
+            color     : var(--color-info);
             font-size : 12px;
             transform : scale(.75);
         }

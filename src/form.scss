@@ -98,6 +98,7 @@
     float: left;
     font-size: $--form-label-font-size;
     color: $--color-text-regular;
+    color: var(--color-text-regular);
     line-height: 40px;
     padding: 0 12px 0 0;
     box-sizing: border-box;
@@ -114,6 +115,7 @@
   }
   @include e(error) {
     color: $--color-danger;
+    color: var(--color-danger);
     font-size: 12px;
     line-height: 1;
     padding-top: 4px;
@@ -136,6 +138,7 @@
       & .el-form-item__label-wrap > .el-form-item__label:before {
         content: '*';
         color: $--color-danger;
+        color: var(--color-danger);
         margin-right: 4px;
       }
     }
@@ -146,6 +149,7 @@
     & .el-textarea__inner {
       &, &:focus {
         border-color: $--color-danger;
+        border-color: var(--color-danger);
       }
     }
     & .el-input-group__append,
@@ -156,6 +160,7 @@
     }
     .el-input__validateIcon {
       color: $--color-danger;
+      color: var(--color-danger);
     }
   }
 

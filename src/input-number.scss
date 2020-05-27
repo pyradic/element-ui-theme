@@ -28,11 +28,13 @@
     text-align: center;
     background: $--background-color-base;
     color: $--color-text-regular;
+    color: var(--color-text-regular);
     cursor: pointer;
     font-size: 13px;
 
     &:hover {
       color: $--color-primary;
+      color: var(--color-primary);
 
       &:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled) {
         border-color: $--input-focus-border;

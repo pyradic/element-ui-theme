@@ -25,6 +25,7 @@
 
     &.is-checked {
       border-color: $--color-primary;
+      border-color: var(--color-primary);
     }
 
     &.is-disabled {
@@ -120,6 +121,7 @@
       }
       & + span.el-radio__label {
         color: $--color-text-placeholder;
+        color: var(--color-text-placeholder);
         cursor: not-allowed;
       }
     }
@@ -165,6 +167,7 @@
       height: 4px;
       border-radius: $--radio-input-border-radius;
       background-color: $--color-white;
+      background-color: var(--color-white);
       content: "";
       position: absolute;
       left: 50%;

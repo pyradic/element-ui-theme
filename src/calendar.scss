@@ -28,6 +28,7 @@
   thead th {
     padding: 12px 0;
     color: $--color-text-regular;
+    color: var(--color-text-regular);
     font-weight: normal;
   }
 
@@ -35,6 +36,7 @@
     td.prev,
     td.next {
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
     }
   }
 
@@ -50,6 +52,7 @@
 
     @include when(today) {
       color: $--color-primary;
+      color: var(--color-primary);
     }
   }
 

@@ -10,6 +10,7 @@
   border-radius: $--alert-border-radius;
   position: relative;
   background-color: $--color-white;
+  background-color: var(--color-white);
   overflow: hidden;
   opacity: 1;
   display: flex;
@@ -19,15 +20,18 @@
   @include when(light) {
     .el-alert__closebtn {
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
     }
   }
 
   @include when(dark) {
     .el-alert__closebtn {
       color: $--color-white;
+      color: var(--color-white);
     }
     .el-alert__description {
       color: $--color-white;
+      color: var(--color-white);
     }
   }
 
@@ -39,15 +43,19 @@
     &.is-light {
       background-color: $--alert-success-color;
       color: $--color-success;
+      color: var(--color-success);
 
       .el-alert__description {
         color: $--color-success;
+        color: var(--color-success);
       }
     }
 
     &.is-dark {
       background-color: $--color-success;
+      background-color: var(--color-success);
       color: $--color-white;
+      color: var(--color-white);
     }
   }
 
@@ -55,15 +63,19 @@
     &.is-light {
       background-color: $--alert-info-color;
       color: $--color-info;
+      color: var(--color-info);
     }
 
     &.is-dark {
       background-color: $--color-info;
+      background-color: var(--color-info);
       color: $--color-white;
+      color: var(--color-white);
     }
 
     .el-alert__description {
       color: $--color-info;
+      color: var(--color-info);
     }
   }
 
@@ -71,15 +83,19 @@
     &.is-light {
       background-color: $--alert-warning-color;
       color: $--color-warning;
+      color: var(--color-warning);
 
       .el-alert__description {
         color: $--color-warning;
+        color: var(--color-warning);
       }
     }
 
     &.is-dark {
       background-color: $--color-warning;
+      background-color: var(--color-warning);
       color: $--color-white;
+      color: var(--color-white);
     }
   }
 
@@ -87,15 +103,19 @@
     &.is-light {
       background-color: $--alert-danger-color;
       color: $--color-danger;
+      color: var(--color-danger);
 
       .el-alert__description {
         color: $--color-danger;
+        color: var(--color-danger);
       }
     }
 
     &.is-dark {
       background-color: $--color-danger;
+      background-color: var(--color-danger);
       color: $--color-white;
+      color: var(--color-white);
     }
   }
 

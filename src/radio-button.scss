@@ -30,6 +30,7 @@
 
     &:hover {
       color: $--color-primary;
+      color: var(--color-primary);
     }
 
     & [class*="el-icon-"] {

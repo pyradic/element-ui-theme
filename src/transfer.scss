@@ -21,7 +21,9 @@
     padding: 10px;
     border-radius: 50%;
     color: $--color-white;
+    color: var(--color-white);
     background-color: $--color-primary;
+    background-color: var(--color-primary);
     font-size: 0;
 
     @include when(with-texts) {
@@ -32,11 +34,13 @@
       border: $--border-base;
       background-color: $--background-color-base;
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
 
       &:hover {
         border: $--border-base;
         background-color: $--background-color-base;
         color: $--color-text-placeholder;
+        color: var(--color-text-placeholder);
       }
     }
 
@@ -63,6 +67,7 @@
   border-radius: $--transfer-border-radius;
   overflow: hidden;
   background: $--color-white;
+  background: var(--color-white);
   display: inline-block;
   vertical-align: middle;
   width: $--transfer-panel-width;
@@ -105,10 +110,12 @@
 
     &.el-checkbox {
       color: $--color-text-regular;
+      color: var(--color-text-regular);
     }
 
     &:hover {
       color: $--color-primary;
+      color: var(--color-primary);
     }
 
     &.el-checkbox .el-checkbox__label {
@@ -162,6 +169,7 @@
     border-bottom: 1px solid $--transfer-border-color;
     box-sizing: border-box;
     color: $--color-black;
+    color: var(--color-black);
 
     .el-checkbox {
       display: block;
@@ -170,12 +178,14 @@
       .el-checkbox__label {
         font-size: 16px;
         color: $--color-text-primary;
+        color: var(--color-text-primary);
         font-weight: normal;
 
         span {
           position: absolute;
           right: 15px;
           color: $--color-text-secondary;
+          color: var(--color-text-secondary);
           font-size: 12px;
           font-weight: normal;
         }
@@ -186,6 +196,7 @@
   .el-transfer-panel__footer {
     height: $--transfer-panel-footer-height;
     background: $--color-white;
+    background: var(--color-white);
     margin: 0;
     padding: 0;
     border-top: 1px solid $--transfer-border-color;
@@ -199,6 +210,7 @@
     .el-checkbox {
       padding-left: 20px;
       color: $--color-text-regular;
+      color: var(--color-text-regular);
     }
   }
 
@@ -208,6 +220,7 @@
     line-height: $--transfer-item-height;
     padding: 6px 15px 0;
     color: $--color-text-secondary;
+    color: var(--color-text-secondary);
     text-align: center;
   }
 

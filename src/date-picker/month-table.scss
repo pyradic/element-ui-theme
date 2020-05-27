@@ -17,11 +17,13 @@
     &.today {
       .cell {
         color: $--color-primary;
+        color: var(--color-primary);
         font-weight: bold;
       }
       &.start-date .cell,
       &.end-date .cell {
         color: $--color-white;
+        color: var(--color-white);
       }
     }
 
@@ -29,9 +31,11 @@
       background-color: $--background-color-base;
       cursor: not-allowed;
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
 
       &:hover {
         color: $--color-text-placeholder;
+        color: var(--color-text-placeholder);
       }
     }
 
@@ -57,11 +61,13 @@
     &.start-date div,
     &.end-date div {
       color: $--color-white;
+      color: var(--color-white);
     }
 
     &.start-date .cell,
     &.end-date .cell {
       color: $--color-white;
+      color: var(--color-white);
       background-color: $--datepicker-active-color;
     }
 

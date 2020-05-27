@@ -65,6 +65,7 @@
     text-align: center;
     cursor: pointer;
     color: $--color-text-regular;
+    color: var(--color-text-regular);
 
     &:hover {
       color: $--datepicker-hover-font-color;

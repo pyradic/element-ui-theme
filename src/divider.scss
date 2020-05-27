@@ -24,9 +24,11 @@
   @include e(text) {
     position: absolute;
     background-color: $--color-white;
+    background-color: var(--color-white);
     padding: 0 20px;
     font-weight: 500;
     color: $--color-text-primary;
+    color: var(--color-text-primary);
     font-size: 14px;
 
     @include when(left) {

@@ -36,6 +36,7 @@
     }
     &.focusing:focus:not(:hover){
       color: $--color-primary;
+      color: var(--color-primary);
     }
     @include when(active) {
       border-bottom-color: transparent;

@@ -25,9 +25,11 @@
     cursor: pointer;
     vertical-align: middle;
     color: $--color-text-primary;
+    color: var(--color-text-primary);
 
     @include when(active) {
       color: $--color-primary;
+      color: var(--color-primary);
     }
 
     @include m(left) {
@@ -76,6 +78,7 @@
       width: $--switch-button-size;
       height: $--switch-button-size;
       background-color: $--color-white;
+      background-color: var(--color-white);
     }
   }
 

@@ -17,6 +17,7 @@
     &.today {
       .cell {
         color: $--color-primary;
+        color: var(--color-primary);
         font-weight: bold;
       }
     }
@@ -25,9 +26,11 @@
       background-color: $--background-color-base;
       cursor: not-allowed;
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
 
       &:hover {
         color: $--color-text-placeholder;
+        color: var(--color-text-placeholder);
       }
     }
 

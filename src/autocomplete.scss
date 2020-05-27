@@ -17,6 +17,7 @@
   border: 1px solid $--border-color-light;
   box-sizing: border-box;
   background-color: $--color-white;
+  background-color: var(--color-white);
 
   @include e(wrap) {
     max-height: 280px;
@@ -35,6 +36,7 @@
     line-height: 34px;
     cursor: pointer;
     color: $--color-text-regular;
+    color: var(--color-text-regular);
     font-size: var(--font-size-base);
     list-style: none;
     white-space: nowrap;
@@ -70,6 +72,7 @@
 
       &:hover {
         background-color: $--color-white;
+        background-color: var(--color-white);
       }
     }
 

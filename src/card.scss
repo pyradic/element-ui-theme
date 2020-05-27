@@ -5,8 +5,10 @@
   border-radius: $--card-border-radius;
   border: 1px solid $--card-border-color;
   background-color: $--color-white;
+  background-color: var(--color-white);
   overflow: hidden;
   color: $--color-text-primary;
+  color: var(--color-text-primary);
   transition: 0.3s;
 
   @include when(always-shadow) {

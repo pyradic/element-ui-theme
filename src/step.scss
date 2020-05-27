@@ -28,27 +28,37 @@
 
     @include when(process) {
       color: $--color-text-primary;
+      color: var(--color-text-primary);
       border-color: $--color-text-primary;
+      border-color: var(--color-text-primary);
     }
 
     @include when(wait) {
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
       border-color: $--color-text-placeholder;
+      border-color: var(--color-text-placeholder);
     }
 
     @include when(success) {
       color: $--color-success;
+      color: var(--color-success);
       border-color: $--color-success;
+      border-color: var(--color-success);
     }
 
     @include when(error) {
       color: $--color-danger;
+      color: var(--color-danger);
       border-color: $--color-danger;
+      border-color: var(--color-danger);
     }
 
     @include when(finish) {
       color: $--color-primary;
+      color: var(--color-primary);
       border-color: $--color-primary;
+      border-color: var(--color-primary);
     }
   }
 
@@ -63,6 +73,7 @@
     font-size: 14px;
     box-sizing: border-box;
     background: $--color-white;
+    background: var(--color-white);
     transition: .15s ease-out;
 
     @include when(text) {
@@ -99,6 +110,7 @@
     position: absolute;
     border-color: inherit;
     background-color: $--color-text-placeholder;
+    background-color: var(--color-text-placeholder);
   }
 
   @include e(line-inner) {
@@ -124,22 +136,27 @@
     @include when(process) {
       font-weight: bold;
       color: $--color-text-primary;
+      color: var(--color-text-primary);
     }
 
     @include when(wait) {
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
     }
 
     @include when(success) {
       color: $--color-success;
+      color: var(--color-success);
     }
 
     @include when(error) {
       color: $--color-danger;
+      color: var(--color-danger);
     }
 
     @include when(finish) {
       color: $--color-primary;
+      color: var(--color-primary);
     }
   }
 
@@ -152,22 +169,27 @@
 
     @include when(process) {
       color: $--color-text-primary;
+      color: var(--color-text-primary);
     }
 
     @include when(wait) {
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
     }
 
     @include when(success) {
       color: $--color-success;
+      color: var(--color-success);
     }
 
     @include when(error) {
       color: $--color-danger;
+      color: var(--color-danger);
     }
 
     @include when(finish) {
       color: $--color-primary;
+      color: var(--color-primary);
     }
   }
 
@@ -295,6 +317,7 @@
         height: 15px;
         width: 1px;
         background: $--color-text-placeholder;
+        background: var(--color-text-placeholder);
       }
 
       &::before {

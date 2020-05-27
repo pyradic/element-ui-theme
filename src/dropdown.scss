@@ -7,6 +7,7 @@
     display   : inline-block;
     position  : relative;
     color     : $--color-text-regular;
+    color     : var(--color-text-regular);
     font-size : var(--font-size-base);
 
     .el-button-group {
@@ -72,6 +73,7 @@
     //padding          : 10px 0;
     margin           : 5px 0;
     background-color : $--color-white;
+    background-color : var(--color-white);
     border           : 1px solid $--border-color-lighter;
     border-radius    : $--border-radius-base;
     box-shadow       : $--dropdown-menu-box-shadow;
@@ -83,6 +85,7 @@
         margin      : 0;
         font-size   : var(--font-size-base);
         color       : $--color-text-regular;
+        color       : var(--color-text-regular);
         cursor      : pointer;
         outline     : none;
         &:not(.is-disabled):hover, &:focus {
@@ -107,6 +110,7 @@
                 display          : block;
                 margin           : 0 -20px;
                 background-color : $--color-white;
+                background-color : var(--color-white);
             }
         }
 

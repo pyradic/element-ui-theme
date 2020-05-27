@@ -1,4 +1,61 @@
 @import "../common/var";
+
+
+@mixin button-variant-css3($color, $background-color, $border-color, $color-css3, $background-color-css3, $border-color-css3) {
+  color: $color;
+  background-color: $background-color;
+  border-color: $border-color;
+
+  color: var($color-css3);
+  background-color: var($background-color-css3);
+  border-color: var($border-color-css3);
+  $_baseline: 100%;
+  &:hover,
+  &:focus {
+    background: mix($--color-white, $background-color, $--button-hover-tint-percent);
+    background: var(#{$background-color-css3}-hover);
+    border-color: mix($--color-white, $border-color, $--button-hover-tint-percent);
+    //backdrop-filter: brightness($_baseline + $--button-hover-tint-percent);
+    color: $color;
+  }
+
+  &:active {
+    background: mix($--color-black, $background-color, $--button-active-shade-percent);
+    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
+    background: var(#{$background-color-css3}-hover);
+    //backdrop-filter: brightness($_baseline - $--button-hover-tint-percent);
+    color: $color;
+    color: var($color-css3);
+    outline: none;
+  }
+
+  &.is-active {
+    background: mix($--color-black, $background-color, $--button-active-shade-percent);
+    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
+    background: var(#{$background-color-css3}-hover);
+    //backdrop-filter: brightness($_baseline - $--button-hover-tint-percent);
+    color: $color;
+    color: var($color-css3);
+  }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $--color-white;
+      color: var(--color-white);
+      background-color: mix($background-color, $--color-white);
+      border-color: mix($border-color, $--color-white);
+    }
+  }
+
+  &.is-plain {
+    @include button-plain($background-color);
+  }
+}
+
+
 @mixin button-plain($color) {
   color: $color;
   background: mix($--color-white, $color, 90%);
@@ -9,12 +66,14 @@
     background: $color;
     border-color: $color;
     color: $--color-white;
+    color: var(--color-white);
   }
 
   &:active {
     background: mix($--color-black, $color, $--button-active-shade-percent);
     border-color: mix($--color-black, $color, $--button-active-shade-percent);
     color: $--color-white;
+    color: var(--color-white);
     outline: none;
   }
 
@@ -61,6 +120,7 @@
     &:focus,
     &:active {
       color: $--color-white;
+      color: var(--color-white);
       background-color: mix($background-color, $--color-white);
       border-color: mix($border-color, $--color-white);
     }

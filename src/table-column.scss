@@ -16,6 +16,7 @@
   border: solid 1px $--border-color-lighter;
   border-radius: 2px;
   background-color: $--color-white;
+  background-color: var(--color-white);
   box-shadow: $--dropdown-menu-box-shadow;
   box-sizing: border-box;
   margin: 2px 0;
@@ -41,7 +42,9 @@
 
     @include when(active) {
       background-color: $--color-primary;
+      background-color: var(--color-primary);
       color: $--color-white;
+      color: var(--color-white);
     }
   }
 
@@ -57,12 +60,14 @@
       background: transparent;
       border: none;
       color: $--color-text-regular;
+      color: var(--color-text-regular);
       cursor: pointer;
       font-size: $--font-size-small;
       padding: 0 3px;
 
       &:hover {
         color: $--color-primary;
+        color: var(--color-primary);
       }
 
       &:focus {

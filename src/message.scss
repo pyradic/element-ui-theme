@@ -41,7 +41,9 @@
 
   @include m(success) {
     background-color: $--color-success-lighter;
+    background-color: var(--color-success-lighter);
     border-color: $--color-success-light;
+    border-color: var(--color-success-light);
 
     .el-message__content {
       color: $--message-success-font-color;
@@ -50,7 +52,9 @@
 
   @include m(warning) {
     background-color: $--color-warning-lighter;
+    background-color: var(--color-warning-lighter);
     border-color: $--color-warning-light;
+    border-color: var(--color-warning-light);
 
     .el-message__content {
       color: $--message-warning-font-color;
@@ -59,7 +63,9 @@
 
   @include m(error) {
     background-color: $--color-danger-lighter;
+    background-color: var(--color-danger-lighter);
     border-color: $--color-danger-light;
+    border-color: var(--color-danger-light);
 
     .el-message__content {
       color: $--message-danger-font-color;

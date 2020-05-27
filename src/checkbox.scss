@@ -24,6 +24,7 @@
 
     &.is-checked {
       border-color: $--color-primary;
+      border-color: var(--color-primary);
     }
 
     &.is-disabled {
@@ -273,6 +274,7 @@
 
     &:hover {
       color: $--color-primary;
+      color: var(--color-primary);
     }
 
     & [class*="el-icon-"] {

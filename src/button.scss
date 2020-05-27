@@ -20,6 +20,13 @@
   margin: 0;
   transition: .1s;
   font-weight: $--button-font-weight;
+  
+  background: var(--button-default-background-color);
+  border: var(--border-base);
+  border-color: var(--button-default-border-color);
+  color: var(--button-default-font-color);
+  font-weight: var(--button-font-weight);
+
   @include utils-user-select(none);
   & + & {
     margin-left: 10px;
@@ -30,8 +37,11 @@
   &:hover,
   &:focus {
     color: $--color-primary;
+    color: var(--color-primary);
     border-color: $--color-primary-light-7;
+    border-color: var(--color-primary-light-7);
     background-color: $--color-primary-light-9;
+    background-color: var(--color-primary-light-9);
   }
 
   &:active {
@@ -54,12 +64,16 @@
     &:hover,
     &:focus {
       background: $--color-white;
+      background: var(--color-white);
       border-color: $--color-primary;
+      border-color: var(--color-primary);
       color: $--color-primary;
+      color: var(--color-primary);
     }
 
     &:active {
       background: $--color-white;
+      background: var(--color-white);
       border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
       color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
       outline: none;
@@ -76,10 +90,13 @@
     &:hover,
     &:focus {
       color: $--button-disabled-font-color;
+      color: var(--button-disabled-font-color);
       cursor: not-allowed;
       background-image: none;
       background-color: $--button-disabled-background-color;
+      background-color: var(--button-disabled-background-color);
       border-color: $--button-disabled-border-color;
+      border-color: var(--button-disabled-border-color);
     }
 
     &.el-button--text {
@@ -91,8 +108,11 @@
       &:hover,
       &:focus {
         background-color: $--color-white;
+        background-color: var(--color-white);
         border-color: $--button-disabled-border-color;
+        border-color: var(--button-disabled-border-color);
         color: $--button-disabled-font-color;
+        color: var(--button-disabled-font-color);
       }
     }
   }
@@ -134,7 +154,7 @@
     @include button-variant($--button-danger-font-color, $--button-danger-background-color, $--button-danger-border-color);
   }
   @include m(info) {
-    @include button-variant($--button-info-font-color, $--button-info-background-color, $--button-info-border-color);
+    @include button-variant-css3($--button-info-font-color, $--button-info-background-color, $--button-info-border-color, --button-info-font-color,--button-info-background-color,--button-info-border-color);
   }
   @include m(medium) {
     @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);
@@ -157,6 +177,7 @@
   @include m(text) {
     border-color: transparent;
     color: $--color-primary;
+    color: var(--color-primary);
     background: transparent;
     padding-left: 0;
     padding-right: 0;
@@ -205,9 +226,13 @@
     }
     &:first-child:last-child {
       border-top-right-radius: $--button-border-radius;
+      border-top-right-radius: var(--button-border-radius);
       border-bottom-right-radius: $--button-border-radius;
+      border-bottom-right-radius: var(--button-border-radius);
       border-top-left-radius: $--button-border-radius;
+      border-top-left-radius: var(--button-border-radius);
       border-bottom-left-radius: $--button-border-radius;
+      border-bottom-left-radius: var(--button-border-radius);
 
       &.is-round {
         border-radius: 20px;
@@ -247,6 +272,7 @@
     .el-button--#{$type} {
       &:first-child {
         border-right-color: rgba($--color-white, 0.5);
+        border-right-color: rgba(var(--color-white), 0.5);
       }
       &:last-child {
         border-left-color: rgba($--color-white, 0.5);

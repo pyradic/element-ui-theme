@@ -68,11 +68,13 @@
       position: relative;
       span {
         color: $--color-primary;
+        color: var(--color-primary);
         font-weight: bold;
       }
       &.start-date span,
       &.end-date span {
         color: $--color-white;
+        color: var(--color-white);
       }
     }
 
@@ -89,11 +91,13 @@
 
     &.current:not(.disabled) span {
       color: $--color-white;
+      color: var(--color-white);
       background-color: $--datepicker-active-color;
     }
     &.start-date div,
     &.end-date div {
       color: $--color-white;
+      color: var(--color-white);
     }
 
     &.start-date span,
@@ -118,6 +122,7 @@
       opacity: 1;
       cursor: not-allowed;
       color: $--color-text-placeholder;
+      color: var(--color-text-placeholder);
     }
 
     &.selected div {
@@ -133,6 +138,7 @@
     &.selected span {
       background-color: $--datepicker-active-color;
       color: $--color-white;
+      color: var(--color-white);
       border-radius: 15px;
     }
 
